@@ -8,4 +8,8 @@ public interface MobileService {
 
 	void add(Mobile m);
 	List<Mobile> display();
+	void delete(int mobid);
+	
+	Mobile update(int mobId,Mobile m);
+	
 }

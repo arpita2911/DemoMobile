@@ -27,4 +27,17 @@ public class MobileServiceImpl implements MobileService {
 		return mr.findAll();
 	}
 
+	@Override
+	public void delete(int mobid) {
+		// TODO Auto-generated method stub
+		mr.deleteById(mobid);
+	}
+
+	@Override
+	public Mobile update(int mobId, Mobile m) {
+		// TODO Auto-generated method stub
+		m.setMobId(mobId);
+		return mr.save(m);
+	}
+
 }
